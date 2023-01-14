@@ -1,0 +1,270 @@
+george@george-VirtualBox:~$ sudo useradd natasha
+george@george-VirtualBox:~$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:102:105::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:103:106:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+syslog:x:104:111::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:112:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:115::/run/uuidd:/usr/sbin/nologin
+systemd-oom:x:108:116:systemd Userspace OOM Killer,,,:/run/systemd:/usr/sbin/nologin
+tcpdump:x:109:117::/nonexistent:/usr/sbin/nologin
+avahi-autoipd:x:110:119:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:111:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+dnsmasq:x:112:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+kernoops:x:113:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+avahi:x:114:121:Avahi mDNS daemon,,,:/run/avahi-daemon:/usr/sbin/nologin
+cups-pk-helper:x:115:122:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+rtkit:x:116:123:RealtimeKit,,,:/proc:/usr/sbin/nologin
+whoopsie:x:117:124::/nonexistent:/bin/false
+sssd:x:118:125:SSSD system user,,,:/var/lib/sss:/usr/sbin/nologin
+speech-dispatcher:x:119:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+nm-openvpn:x:120:126:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+saned:x:121:128::/var/lib/saned:/usr/sbin/nologin
+colord:x:122:129:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+geoclue:x:123:130::/var/lib/geoclue:/usr/sbin/nologin
+pulse:x:124:131:PulseAudio daemon,,,:/run/pulse:/usr/sbin/nologin
+gnome-initial-setup:x:125:65534::/run/gnome-initial-setup/:/bin/false
+hplip:x:126:7:HPLIP system user,,,:/run/hplip:/bin/false
+gdm:x:127:133:Gnome Display Manager:/var/lib/gdm3:/bin/false
+george:x:1000:1000:george,,,:/home/george:/bin/bash
+sshd:x:128:65534::/run/sshd:/usr/sbin/nologin
+natasha:x:1001:1002::/home/natasha:/bin/sh
+george@george-VirtualBox:~$ sudo cat /etc/shadow
+root:!:19253:0:99999:7:::
+daemon:*:19213:0:99999:7:::
+bin:*:19213:0:99999:7:::
+sys:*:19213:0:99999:7:::
+sync:*:19213:0:99999:7:::
+games:*:19213:0:99999:7:::
+man:*:19213:0:99999:7:::
+lp:*:19213:0:99999:7:::
+mail:*:19213:0:99999:7:::
+news:*:19213:0:99999:7:::
+uucp:*:19213:0:99999:7:::
+proxy:*:19213:0:99999:7:::
+www-data:*:19213:0:99999:7:::
+backup:*:19213:0:99999:7:::
+list:*:19213:0:99999:7:::
+irc:*:19213:0:99999:7:::
+gnats:*:19213:0:99999:7:::
+nobody:*:19213:0:99999:7:::
+systemd-network:*:19213:0:99999:7:::
+systemd-resolve:*:19213:0:99999:7:::
+messagebus:*:19213:0:99999:7:::
+systemd-timesync:*:19213:0:99999:7:::
+syslog:*:19213:0:99999:7:::
+_apt:*:19213:0:99999:7:::
+tss:*:19213:0:99999:7:::
+uuidd:*:19213:0:99999:7:::
+systemd-oom:*:19213:0:99999:7:::
+tcpdump:*:19213:0:99999:7:::
+avahi-autoipd:*:19213:0:99999:7:::
+usbmux:*:19213:0:99999:7:::
+dnsmasq:*:19213:0:99999:7:::
+kernoops:*:19213:0:99999:7:::
+avahi:*:19213:0:99999:7:::
+cups-pk-helper:*:19213:0:99999:7:::
+rtkit:*:19213:0:99999:7:::
+whoopsie:*:19213:0:99999:7:::
+sssd:*:19213:0:99999:7:::
+speech-dispatcher:!:19213:0:99999:7:::
+nm-openvpn:*:19213:0:99999:7:::
+saned:*:19213:0:99999:7:::
+colord:*:19213:0:99999:7:::
+geoclue:*:19213:0:99999:7:::
+pulse:*:19213:0:99999:7:::
+gnome-initial-setup:*:19213:0:99999:7:::
+hplip:*:19213:0:99999:7:::
+gdm:*:19213:0:99999:7:::
+george:$y$j9T$rklDJJAzGxTMVSKGfcCuz.$FsIG68/c2iPLEa8oc49IAeHjlOyXnjCgaFnjPAjYEV1:19253:0:99999:7:::
+sshd:*:19260:0:99999:7:::
+natasha:!:19274:0:99999:7:::
+george@george-VirtualBox:~$ sudo cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,george
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:george
+floppy:x:25:
+tape:x:26:
+sudo:x:27:george
+audio:x:29:pulse
+dip:x:30:george
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:george
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+crontab:x:104:
+messagebus:x:105:
+systemd-timesync:x:106:
+input:x:107:
+sgx:x:108:
+kvm:x:109:
+render:x:110:
+syslog:x:111:
+tss:x:112:
+bluetooth:x:113:
+ssl-cert:x:114:
+uuidd:x:115:
+systemd-oom:x:116:
+tcpdump:x:117:
+_ssh:x:118:
+avahi-autoipd:x:119:
+netdev:x:120:
+avahi:x:121:
+lpadmin:x:122:george
+rtkit:x:123:
+whoopsie:x:124:
+sssd:x:125:
+nm-openvpn:x:126:
+scanner:x:127:saned
+saned:x:128:
+colord:x:129:
+geoclue:x:130:
+pulse:x:131:
+pulse-access:x:132:
+gdm:x:133:
+lxd:x:134:george
+george:x:1000:
+sambashare:x:135:george
+dev:x:1001:
+natasha:x:1002:
+george@george-VirtualBox:~$ sudo deluser natasha
+Removing user `natasha' ...
+Warning: group `natasha' has no more members.
+Done.
+george@george-VirtualBox:~$ sudo groupadd people
+george@george-VirtualBox:~$ sudo useradd petya
+george@george-VirtualBox:~$ id eptya
+id: ‘eptya’: no such user
+george@george-VirtualBox:~$ id petya
+uid=1001(petya) gid=1003(petya) groups=1003(petya)
+george@george-VirtualBox:~$ sudo usermod -a -G people petya
+george@george-VirtualBox:~$ id petya
+uid=1001(petya) gid=1003(petya) groups=1003(petya),1002(people)
+george@george-VirtualBox:~$ sudo usermod -g people petya
+george@george-VirtualBox:~$ id petya
+uid=1001(petya) gid=1002(people) groups=1002(people)
+george@george-VirtualBox:~$ sudo usermod -a -G petya petya
+george@george-VirtualBox:~$ id petya
+uid=1001(petya) gid=1002(people) groups=1002(people),1003(petya)
+george@george-VirtualBox:~$ man usermod
+george@george-VirtualBox:~$ sudo gpasswd -d petya petya
+Removing user petya from group petya
+george@george-VirtualBox:~$ id petya
+uid=1001(petya) gid=1002(people) groups=1002(people)
+george@george-VirtualBox:~$ su - petya
+Password:
+$ /bin/bash
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+petya@george-VirtualBox:~$ sudo useradd sasha
+[sudo] password for petya:
+Sorry, try again.
+[sudo] password for petya:
+Sorry, try again.
+[sudo] password for petya:
+petya@george-VirtualBox:~$ users
+george george
+petya@george-VirtualBox:~$ cat /ets/passwd
+cat: /ets/passwd: No such file or directory
+petya@george-VirtualBox:~$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:102:105::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:103:106:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+syslog:x:104:111::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:112:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:115::/run/uuidd:/usr/sbin/nologin
+systemd-oom:x:108:116:systemd Userspace OOM Killer,,,:/run/systemd:/usr/sbin/nologin
+tcpdump:x:109:117::/nonexistent:/usr/sbin/nologin
+avahi-autoipd:x:110:119:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:111:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+dnsmasq:x:112:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+kernoops:x:113:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+avahi:x:114:121:Avahi mDNS daemon,,,:/run/avahi-daemon:/usr/sbin/nologin
+cups-pk-helper:x:115:122:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+rtkit:x:116:123:RealtimeKit,,,:/proc:/usr/sbin/nologin
+whoopsie:x:117:124::/nonexistent:/bin/false
+sssd:x:118:125:SSSD system user,,,:/var/lib/sss:/usr/sbin/nologin
+speech-dispatcher:x:119:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+nm-openvpn:x:120:126:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+saned:x:121:128::/var/lib/saned:/usr/sbin/nologin
+colord:x:122:129:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+geoclue:x:123:130::/var/lib/geoclue:/usr/sbin/nologin
+pulse:x:124:131:PulseAudio daemon,,,:/run/pulse:/usr/sbin/nologin
+gnome-initial-setup:x:125:65534::/run/gnome-initial-setup/:/bin/false
+hplip:x:126:7:HPLIP system user,,,:/run/hplip:/bin/false
+gdm:x:127:133:Gnome Display Manager:/var/lib/gdm3:/bin/false
+george:x:1000:1000:george,,,:/home/george:/bin/bash
+sshd:x:128:65534::/run/sshd:/usr/sbin/nologin
+petya:x:1001:1002::/home/petya:/bin/sh
+sasha:x:1002:1004::/home/sasha:/bin/sh
