@@ -1,0 +1,302 @@
+Desktop  Documents  Downloads  Music  password  Pictures  Public  snap  Templates  Videos
+george@george-VirtualBox:~$ echo "text" > text.txt
+george@george-VirtualBox:~$ ls
+Desktop  Documents  Downloads  Music  password  Pictures  Public  snap  Templates  text.txt  Videos
+george@george-VirtualBox:~$ cat /etc 2> errors.txt
+george@george-VirtualBox:~$ ls
+Desktop    Downloads   file.txt  password  Public  Templates  Videos
+Documents  errors.txt  Music     Pictures  snap    text.txt
+george@george-VirtualBox:~$ cat errors.txt
+cat: /etc: Is a directory
+george@george-VirtualBox:~$ ls -la /etc | cut -c 1-10
+total 1128
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+-rw-r-----
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+drwxr-s---
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+-rw-rw-r--
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+-rw-r-----
+-rw-r-----
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+-rw-r--r--
+lrwxrwxrwx
+drwxr-xr-x
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+-r--r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+lrwxrwxrwx
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+-rwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+lrwxrwxrwx
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+-rw-rw-r--
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+-rw-------
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+lrwxrwxrwx
+lrwxrwxrwx
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+-rw-r-----
+-rw-r-----
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-r--r-----
+drwxr-xr-x
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+lrwxrwxrwx
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+george@george-VirtualBox:~$ ls -la /etc | cut -c 1-10 | sort | uniq
+drwxr-s---
+drwxr-xr-x
+lrwxrwxrwx
+-r--r-----
+-r--r--r--
+-rw-------
+-rw-r-----
+-rw-r--r--
+-rw-rw-r--
+-rwxr-xr-x
+total 1128
+george@george-VirtualBox:~$ sudo nano /etc/ssh/sshd_config
+[sudo] password for george:
+george@george-VirtualBox:~$ sudo systemctl reload sshd
+george@george-VirtualBox:~$ sudo nano /etc/ssh/sshd_config
+george@george-VirtualBox:~$ sudo systemctl restart sshd
+george@george-VirtualBox:~$ sudo systemctl status sshd
+● ssh.service - OpenBSD Secure Shell server
+     Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enabled)
+     Active: active (running) since Wed 2022-10-12 22:20:46 MSK; 55s ago
+       Docs: man:sshd(8)
+             man:sshd_config(5)
+    Process: 2778 ExecStartPre=/usr/sbin/sshd -t (code=exited, status=0/SUCCESS)
+   Main PID: 2779 (sshd)
+      Tasks: 1 (limit: 2288)
+     Memory: 1.7M
+        CPU: 34ms
+     CGroup: /system.slice/ssh.service
+             └─2779 "sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups"
+
+окт 12 22:20:46 george-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+окт 12 22:20:46 george-VirtualBox sshd[2779]: Server listening on 0.0.0.0 port 22.
+окт 12 22:20:46 george-VirtualBox sshd[2779]: Server listening on :: port 22.
+окт 12 22:20:46 george-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+george@george-VirtualBox:~$ cat > h
+asdfg
+george@george-VirtualBox:~$ ls
+Desktop    Downloads   file.txt  Music     Pictures  snap       text.txt
+Documents  errors.txt  h         password  Public    Templates  Videos
+george@george-VirtualBox:~$ cat h
+asdfg
+
+george@george-VirtualBox:~$ mc
+
+george@george-VirtualBox:~$ ps
+    PID TTY          TIME CMD
+   3209 pts/3    00:00:00 bash
+   3216 pts/3    00:00:00 ps
+
+[1]+  Stopped                 mc
+george@george-VirtualBox:~$ ps
+    PID TTY          TIME CMD
+   2706 pts/2    00:00:00 bash
+   3207 pts/2    00:00:00 mc
+   3217 pts/2    00:00:00 ps
+george@george-VirtualBox:~$ kill -9 3207
+[1]+  Killed                  mc
+george@george-VirtualBox:~$ ps
+    PID TTY          TIME CMD
+   2706 pts/2    00:00:00 bash
+   3219 pts/2    00:00:00 ps
+george@george-VirtualBox:~$
