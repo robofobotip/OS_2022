@@ -1,0 +1,152 @@
+root@georg:~# ps -e
+    PID TTY          TIME CMD
+      1 ?        00:01:00 systemd
+      2 ?        00:00:00 kthreadd
+      3 ?        00:00:00 rcu_gp
+      4 ?        00:00:00 rcu_par_gp
+      6 ?        00:00:00 kworker/0:0H-events_highpri
+      8 ?        00:00:00 mm_percpu_wq
+      9 ?        00:00:00 rcu_tasks_rude_
+     10 ?        00:00:00 rcu_tasks_trace
+     11 ?        00:02:30 ksoftirqd/0
+     12 ?        00:00:46 rcu_sched
+     13 ?        00:00:09 migration/0
+     15 ?        00:00:00 cpuhp/0
+     17 ?        00:00:00 kdevtmpfs
+     18 ?        00:00:00 netns
+     19 ?        00:00:00 kauditd
+     20 ?        00:00:07 khungtaskd
+     21 ?        00:00:00 oom_reaper
+     22 ?        00:00:00 writeback
+     23 ?        00:00:56 kcompactd0
+     24 ?        00:00:00 ksmd
+     25 ?        00:00:11 khugepaged
+     43 ?        00:00:00 kintegrityd
+     44 ?        00:00:00 kblockd
+     45 ?        00:00:00 blkcg_punt_bio
+     46 ?        00:00:00 edac-poller
+     47 ?        00:00:00 devfreq_wq
+     48 ?        00:00:11 kworker/0:1H-kblockd
+     51 ?        00:00:05 kswapd0
+     52 ?        00:00:00 kthrotld
+     53 ?        00:00:00 acpi_thermal_pm
+     54 ?        00:00:00 ipv6_addrconf
+     64 ?        00:00:00 kstrp
+     67 ?        00:00:00 zswap-shrink
+     68 ?        00:00:00 kworker/u3:0
+    102 ?        00:00:00 ata_sff
+    103 ?        00:00:00 scsi_eh_0
+    104 ?        00:00:00 scsi_tmf_0
+    105 ?        00:00:00 scsi_eh_1
+    106 ?        00:00:00 scsi_tmf_1
+    126 ?        00:00:26 jbd2/vda1-8
+    127 ?        00:00:00 ext4-rsv-conver
+    138 ?        00:02:26 hwrng
+    161 ?        00:04:50 systemd-journal
+    176 ?        00:00:08 systemd-udevd
+    225 ?        00:00:10 systemd-timesyn
+    246 ?        00:00:10 cron
+    249 ?        00:01:56 dbus-daemon
+    255 ?        00:02:58 qemu-ga
+    256 ?        00:00:45 rsyslogd
+    260 ?        00:01:49 systemd-logind
+    375 ?        00:04:00 unattended-upgr
+    380 tty1     00:00:00 agetty
+    387 ?        00:01:46 sshd
+    393 ?        00:01:32 apache2
+    451 ?        00:00:00 wg-crypt-wg0
+  62511 ?        00:00:00 systemd
+  62512 ?        00:00:00 (sd-pam)
+  62550 ?        00:00:00 screen
+  62551 pts/1    00:00:00 bash
+  62554 pts/1    00:04:22 python3
+ 135770 ?        00:00:13 kworker/0:1-wg-crypt-wg0
+ 135776 ?        00:00:00 sshd
+ 135783 pts/0    00:00:00 bash
+ 135823 ?        00:00:00 kworker/u2:1-flush-254:0
+ 135839 ?        00:00:06 kworker/0:2-wg-crypt-wg0
+ 136116 ?        00:00:00 kworker/u2:0-ext4-rsv-conversion
+ 136139 ?        00:00:08 kworker/0:0-wg-crypt-wg0
+ 136162 ?        00:00:00 kworker/u2:2-events_unbound
+ 136179 ?        00:00:07 kworker/0:3-wg-crypt-wg0
+ 136225 ?        00:00:00 apache2
+ 136226 ?        00:00:00 apache2
+ 136302 pts/0    00:00:00 ps
+root@georg:~# ps -p 62550 -f
+UID          PID    PPID  C STIME TTY          TIME CMD
+root       62550       1  0 Nov01 ?        00:00:00 SCREEN
+root@georg:~# ps -p 62550 -F
+UID          PID    PPID  C    SZ   RSS PSR STIME TTY          TIME CMD
+root       62550       1  0  1011  1860   0 Nov01 ?        00:00:00 SCREEN
+root@georg:~# pstree 62550
+screen---bash---python3---{python3}
+root@georg:~# pstree -aps 62550
+systemd,1
+  `-screen,62550
+      `-bash,62551
+          `-python3,62554 main.py
+              `-{python3},62555
+root@georg:~# ps -p 393 -f
+UID          PID    PPID  C STIME TTY          TIME CMD
+root         393       1  0 Oct25 ?        00:01:32 /usr/sbin/apache2 -k start
+root@georg:~# ps -p 393 -F
+UID          PID    PPID  C    SZ   RSS PSR STIME TTY          TIME CMD
+root         393       1  0  1647  4856   0 Oct25 ?        00:01:32 /usr/sbin/apache2 -k start
+root@georg:~# pstree -aps 393
+systemd,1
+  `-apache2,393 -k start
+      |-apache2,136225 -k start
+      |   |-{apache2},136230
+      |   |-{apache2},136231
+      |   |-{apache2},136232
+      |   |-{apache2},136233
+      |   |-{apache2},136250
+      |   |-{apache2},136251
+      |   |-{apache2},136252
+      |   |-{apache2},136253
+      |   |-{apache2},136254
+      |   |-{apache2},136255
+      |   |-{apache2},136256
+      |   |-{apache2},136257
+      |   |-{apache2},136258
+      |   |-{apache2},136259
+      |   |-{apache2},136260
+      |   |-{apache2},136261
+      |   |-{apache2},136262
+      |   |-{apache2},136263
+      |   |-{apache2},136264
+      |   |-{apache2},136274
+      |   |-{apache2},136275
+      |   |-{apache2},136276
+      |   |-{apache2},136277
+      |   |-{apache2},136278
+      |   |-{apache2},136279
+      |   `-{apache2},136280
+      `-apache2,136226 -k start
+          |-{apache2},136229
+          |-{apache2},136234
+          |-{apache2},136235
+          |-{apache2},136236
+          |-{apache2},136237
+          |-{apache2},136238
+          |-{apache2},136239
+          |-{apache2},136240
+          |-{apache2},136241
+          |-{apache2},136242
+          |-{apache2},136243
+          |-{apache2},136244
+          |-{apache2},136245
+          |-{apache2},136246
+          |-{apache2},136247
+          |-{apache2},136248
+          |-{apache2},136249
+          |-{apache2},136265
+          |-{apache2},136266
+          |-{apache2},136267
+          |-{apache2},136268
+          |-{apache2},136269
+          |-{apache2},136270
+          |-{apache2},136271
+          |-{apache2},136272
+          `-{apache2},136273
+root@georg:~#
